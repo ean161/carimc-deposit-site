@@ -2,7 +2,9 @@
 require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/lib/init.php");
 require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/parts/header.php");
 ?>
+
 <div class="blog-slider">
+    <img class="banner" src="/assets/images/banner.png" width="100px" class="d-flex justify-content-end"/>
     <div class="blog-slider__wrp swiper-wrapper">
         <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
@@ -10,7 +12,9 @@ require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/parts/header.php");
             </div>
             <div class="blog-slider__content">
                 <span class="blog-slider__code">Minecraft servers</span>
-                <div class="blog-slider__title">CariMC</div>
+                <div class="title-wrapper">
+                    <div class="blog-slider__title">CariMC</div>
+                </div>
                 <div class="blog-slider__text"><?=Config::description();?></div>
                 <p class="blog-slider__button" onclick="cardSlide()">Nạp thẻ</p>&ensp;
                 <p class="blog-slider__button" onclick="bankingSlide()">Nạp ATM</p>
@@ -22,7 +26,9 @@ require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/parts/header.php");
             </div>
             <div class="blog-slider__content">
                 <span class="blog-slider__code">Minecraft servers</span>
-                <div class="blog-slider__title">CariMC</div>
+                <div class="title-wrapper">
+                    <div class="blog-slider__title">CariMC</div>
+                </div>
                 <div class="blog-slider__text"><?=Config::notification("card");?></div>
                 <a href="#" class="blog-slider__button">READ MORE</a>
             </div>
@@ -33,7 +39,9 @@ require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/parts/header.php");
             </div>
             <div class="blog-slider__content">
                 <span class="blog-slider__code">Minecraft servers</span>
-                <div class="blog-slider__title">CariMC</div>
+                <div class="title-wrapper">
+                    <div class="blog-slider__title">CariMC</div>
+                </div>
                 <div class="blog-slider__text"><?=Config::notification("banking");?></div>
                 <a href="#" class="blog-slider__button">READ MORE</a>
             </div>

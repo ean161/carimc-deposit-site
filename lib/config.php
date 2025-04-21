@@ -12,7 +12,7 @@ class Config {
     }
 
     public static function description() {
-        return "こんにちは、ここはMinecraftのせーべーのwebsiteです";
+        return "こんにちは、ここはMinecraftのせーべーのwebsiteです。こんにちは、ここはMinecraftのせーべーのwebsiteです。こんにちは、ここはMinecraftのせーべーのwebsiteです。";
     }
 
     public static function notification($type) {
