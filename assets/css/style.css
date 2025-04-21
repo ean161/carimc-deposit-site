@@ -338,5 +338,15 @@ body {
 }
 
 .title-wrapper {
-    /* justify-items: center; */
+    justify-items: left;
+}
+
+.select, .select:hover {
+    padding: 7px 20px;
+    outline: none;
+    color: #e1ad71;
+    border: 2px #4b3a2f70 solid;
+    border-radius: 20px;
+    width: 100%;
+    background: none;
 }

@@ -17,6 +17,8 @@ class Config {
 
     public static function notification($type) {
         switch ($type) {
+            case "login":
+                return "Tài khoản này là tên tài khoản Minecraft bạn đã /dangky, /dangnhap ở sảnh máy chủ";
             case "card":
                 return "Vui lòng xác nhận thông tin là đúng trước khi gửi";
             case "banking":
