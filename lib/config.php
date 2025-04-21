@@ -14,4 +14,15 @@ class Config {
     public static function description() {
         return "こんにちは、ここはMinecraftのせーべーのwebsiteです";
     }
+
+    public static function notification($type) {
+        switch ($type) {
+            case "card":
+                return "Vui lòng xác nhận thông tin là đúng trước khi gửi";
+            case "banking":
+                return "Vui lòng xác nhận thông tin là đúng trước khi gửi";
+            default:
+                return "";
+        }
+    }
 }

@@ -10,3 +10,11 @@ var swiper = new Swiper('.blog-slider', {
         clickable: true,
     }
 });
+
+function cardSlide() {
+    swiper.slideTo(2)
+}
+
+function bankingSlide() {
+    swiper.slideTo(3);
+}

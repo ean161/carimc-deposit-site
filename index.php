@@ -12,8 +12,8 @@ require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/parts/header.php");
                 <span class="blog-slider__code">Minecraft servers</span>
                 <div class="blog-slider__title">CariMC</div>
                 <div class="blog-slider__text"><?=Config::description();?></div>
-                <a href="#" class="blog-slider__button">Nạp thẻ</a>&ensp;
-                <a href="#" class="blog-slider__button">Momo/ATM</a>
+                <p class="blog-slider__button" onclick="cardSlide()">Nạp thẻ</p>&ensp;
+                <p class="blog-slider__button" onclick="bankingSlide()">Nạp ATM</p>
             </div>
         </div>
         <div class="blog-slider__item swiper-slide">
@@ -21,9 +21,9 @@ require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/parts/header.php");
                 <img src="/assets/images/logo.png" alt="">
             </div>
             <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <span class="blog-slider__code">Minecraft servers</span>
+                <div class="blog-slider__title">CariMC</div>
+                <div class="blog-slider__text"><?=Config::notification("card");?></div>
                 <a href="#" class="blog-slider__button">READ MORE</a>
             </div>
         </div>
@@ -34,7 +34,7 @@ require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/parts/header.php");
             <div class="blog-slider__content">
                 <span class="blog-slider__code">26 December 2019</span>
                 <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <div class="blog-slider__text"><?=Config::notification("banking");?></div>
                 <a href="#" class="blog-slider__button">READ MORE</a>
             </div>
         </div>
