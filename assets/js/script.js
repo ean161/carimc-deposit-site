@@ -12,7 +12,7 @@ var swiper = new Swiper('.blog-slider', {
 });
 
 function cardSlide() {
-    swiper.slideTo(2)
+    swiper.slideTo(2);
 }
 
 function bankingSlide() {

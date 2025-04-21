@@ -32,8 +32,8 @@ require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/parts/header.php");
                 <img src="/assets/images/logo.png" alt="">
             </div>
             <div class="blog-slider__content">
-                <span class="blog-slider__code">26 December 2019</span>
-                <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                <span class="blog-slider__code">Minecraft servers</span>
+                <div class="blog-slider__title">CariMC</div>
                 <div class="blog-slider__text"><?=Config::notification("banking");?></div>
                 <a href="#" class="blog-slider__button">READ MORE</a>
             </div>

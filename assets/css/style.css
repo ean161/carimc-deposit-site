@@ -19,7 +19,7 @@ body {
     position: relative;
     max-width: 800px;
     margin: auto;
-    background: #ffffffe2;
+    background: #231515e2;
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
     padding: 25px;
     border-radius: 25px;
@@ -214,21 +214,23 @@ body {
 }
 
 .blog-slider__code {
-    color: #7b7992;
-    margin-bottom: 15px;
+    color: #ecd7d747;
+    margin-bottom: 5px;
     display: block;
     font-weight: 500;
 }
 
 .blog-slider__title {
+    width: fit-content;
     font-size: 24px;
     font-weight: 700;
-    color: #0d0925;
+    color: white;
     margin-bottom: 20px;
+    background: url("https://donate.supermc.vn/assets/imgs/username_bg.gif");
 }
 
 .blog-slider__text {
-    color: #4e4a67;
+    color: #e1ad71;
     margin-bottom: 30px;
     line-height: 1.5em;
 }
