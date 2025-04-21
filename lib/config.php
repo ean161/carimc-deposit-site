@@ -10,4 +10,8 @@ class Config {
             "name" =>  "carimcxy_main"
         ];
     }
+
+    public static function description() {
+        return "こんにちは、ここはMinecraftのせーべーのwebsiteです";
+    }
 }
