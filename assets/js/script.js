@@ -1,7 +1,7 @@
 var swiper = new Swiper('.blog-slider', {
     spaceBetween: 30,
     effect: 'fade',
-    loop: true,
+    loop: false,
     mousewheel: {
         invert: false,
     },
@@ -35,6 +35,43 @@ function bankingSlide() {
     swiper.slideTo(3);
 }
 
-async function login() {
-    notyf.error("Tính năng đang bảo trì");
+$(".username").keypress(function (e) {
+    if (e.which == 13) {
+        login();
+    }
+
+    console.log(e.which);
+});
+
+function send(url, data) {
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            url: url,
+            type: "POST",
+            data: data,
+            success: function (response) {
+                let rsp = JSON.parse(response);
+                if ("message" in rsp) {
+                    if (rsp.status == -1) {
+                        window.location.href = "/model/logout";
+                    } else if (rsp.status == 0) {
+                        notyf.error(rsp.message);
+                    } else if (rsp.status == 2) {
+                        notyf.open({
+                            type: "primary",
+                            message: rsp.message
+                        });
+                    } else {
+                        notyf.success(rsp.message);
+                    }
+                }
+                
+                console.log(rsp);
+                resolve(rsp);
+            },
+            error: function (error) {
+                reject(error);
+            }
+        });
+    });
 }

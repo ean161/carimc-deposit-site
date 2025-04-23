@@ -1,4 +1,8 @@
-<div class="blog-slider" id="home-page" style="display: none">
+<?php
+require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/lib/init.php");
+require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/view/header.php");
+?>
+<div class="blog-slider">
     <img class="banner" src="/assets/images/banner.png" width="100px" class="d-flex justify-content-end"/>
     <div class="blog-slider__wrp swiper-wrapper">
         <div class="blog-slider__item swiper-slide">
@@ -10,7 +14,7 @@
                 <div class="title-wrapper">
                     <center><div class="blog-slider__title">CariMC</div></center>
                 </div>
-                <div class="blog-slider__text"><?=Config::notification("login");?></div>
+                <div class="blog-slider__text"><?=Config::notification("home");?></div>
                 <p class="blog-slider__button" onclick="cardSlide()">Nạp thẻ</p>&ensp;
                 <p class="blog-slider__button" onclick="bankingSlide()">Nạp ATM</p>
             </div>
@@ -44,3 +48,6 @@
     </div>
     <div class="blog-slider__pagination"></div>
 </div>
+<?php
+require_once(realpath($_SERVER["DOCUMENT_ROOT"])."/view/footer.php");
+?>
